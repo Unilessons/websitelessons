@@ -54,12 +54,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  /*--bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-  --bs-font-sans-serif: system-ui, -apple-system,"IBM Plex Mono", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  /*--bs-body-font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;*/
-  --bs-body-font-family: "IBM Plex Mono", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -5543,8 +5541,7 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  /*font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-  font-family: "IBM Plex Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5654,8 +5651,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  /*font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-  font-family: "IBM Plex Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11116,89 +11112,6 @@ footer.footer .social-link:hover {
 
 
 
-.ibm-plex-mono-thin {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.ibm-plex-mono-extralight {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.ibm-plex-mono-light {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ibm-plex-mono-regular {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ibm-plex-mono-medium {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ibm-plex-mono-semibold {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ibm-plex-mono-bold {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ibm-plex-mono-thin-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.ibm-plex-mono-extralight-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.ibm-plex-mono-light-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ibm-plex-mono-regular-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ibm-plex-mono-medium-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ibm-plex-mono-semibold-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.ibm-plex-mono-bold-italic {
-  font-family: "IBM Plex Mono", serif;
-  font-weight: 700;
-  font-style: italic;
-}
 
 
 
