@@ -80,7 +80,7 @@ function fadeIn(el, display) {
 };
 
 
-function handleSelectChange(select) {
+function handleSelectChange_uni(select) {
     const selectedValue = select.value;
 
     // Riferimento all'immagine predefinita
@@ -99,7 +99,7 @@ function handleSelectChange(select) {
     }
 } 
 
-function handleSelectChange(select) {
+function handleSelectChange_school(select) {
     const selectedValue = select.value;
 
     // Riferimento all'immagine predefinita
