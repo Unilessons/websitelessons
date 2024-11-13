@@ -37,7 +37,8 @@
                 <li class="sidebar-brand"><a href="#page-top">Unilessons</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
                 <li class="sidebar-nav-item"><a href="#about">Su di noi</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Corsi Offerti</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Corsi Universitari Offerti</a></li>
+                <li class="sidebar-nav-item"><a href="#services_high_school">Corsi Universitari Offerti</a></li>
                 <li class="sidebar-nav-item"><a href="#outro">Grazie <i class="fas fa-heart" style="color: red;"></i></a></li>
                 <li class="sidebar-nav-item"><a href="#contact">Contatti</a></li>
             </ul>
@@ -96,7 +97,8 @@
 
                         
                         <!-- Existing Button -->
-                        <a class="btn btn-dark btn-xl" href="#services">Come puoi aiutarmi?</a>
+                        <a class="btn btn-dark btn-xl" href="#services">Come puoi aiutarmi all'università ?</a>
+                        <a class="btn btn-dark btn-xl" href="#services_high_school">Come puoi aiutarmi alle superiori ?</a>
                     </div>
                 </div>
             </div>
@@ -105,7 +107,7 @@
         <!-- Services-->
         <section id="services" class="content-section bg-primary text-white text-center py-5">
             <div class="container px-4 px-lg-5">
-                <h2 class="mb-5">Seleziona il tuo corso</h2>
+                <h2 class="mb-5">Seleziona il tuo corso universitario</h2>
                 <div class="dropdown mb-4">
                 <select class="form-select form-select-lg" aria-label="Seleziona un corso" onchange="handleSelectChange(this)">
                     <option selected value="default">Scegli un corso</option>
@@ -1608,6 +1610,311 @@
 
             </div>
         </section>
+        <!-- Services_high_school-->
+        <section id="Services_high_school" class="content-section bg-primary text-white text-center py-5">
+            <div class="container px-4 px-lg-5">
+                <h2 class="mb-5">Seleziona la tua scuola superiore</h2>
+                <div class="dropdown mb-4">
+                <select class="form-select form-select-lg" aria-label="Seleziona un corso" onchange="handleSelectChange(this)">
+                    <option selected value="default">Scegli una scuola superiore</option>
+                    <option value="liceo-scientifico-dropdown">Liceo Scientifico</option>
+                    <option value="liceo-classico-dropdown">Liceo Classico</option>
+                    <option value="liceo-linguistico-dropdown">Liceo Linguistico</option>
+                    <option value="liceo-artistico-dropdown">Liceo Artistico</option>
+                    <option value="liceo-scienze-umane-dropdown">Liceo delle Scienze Umane</option>
+                    <option value="liceo-musicale-dropdown">Liceo Musicale</option>
+                    <option value="liceo-coreutico-dropdown">Liceo Coreutico</option>
+                    <option value="istituto-tecnico-economico-dropdown">Istituto Tecnico Economico</option>
+                    <option value="istituto-tecnico-tecnologico-dropdown">Istituto Tecnico Tecnologico</option>
+                    <option value="istituto-professionale-servizi-dropdown">Istituto Professionale per i Servizi</option>
+                    <option value="istituto-professionale-industria-dropdown">Istituto Professionale per l'Industria e l'Artigianato</option>
+                    <option value="istituto-professionale-agricoltura-dropdown">Istituto Professionale per l'Agricoltura e lo Sviluppo Rurale</option>
+                    <option value="istituto-professionale-enogastronomia-dropdown">Istituto Professionale per Enogastronomia e Ospitalità Alberghiera</option>
+                  </select>
+                  
+                </h2>
+                <p class="p"> </p>
+                
+                <!-- Aggiungi un'immagine con un ID specifico -->
+                <img id="default-image" src="assets/high-school.png" alt="Immagine predefinita" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto;">
+
+
+                <div class="row gx-4 gx-lg-5">
+                    <!-- Liceo Scientifico -->
+                    <div id="liceo-scientifico-dropdown" class="faculty-exams" style="display:none;">
+                        <div class="col-12 mb-4">
+                            <h2>Liceo Scientifico</h2>
+                        </div>
+                        <div class="row">
+                            <!-- Materia 1 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Scientifico+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-square-root-alt"></i>
+                                </a>
+                                <h4>Matematica</h4>
+                            </div>
+                            <!-- Materia 2 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Scientifico+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-atom"></i>
+                                </a>
+                                <h4>Fisica</h4>
+                            </div>
+                            <!-- Materia 3 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Scientifico+e+vorrei+fare+ripetizioni+di+Scienze.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-flask"></i>
+                                </a>
+                                <h4>Scienze Naturali</h4>
+                            </div>
+                            <!-- Materia 4 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Scientifico+e+vorrei+fare+ripetizioni+di+Chimica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-vial"></i>
+                                </a>
+                                <h4>Chimica</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row gx-4 gx-lg-5">
+                    <!-- Liceo Classico -->
+                    <div id="liceo-classico-dropdown" class="faculty-exams" style="display:none;">
+                        <div class="col-12 mb-4">
+                            <h2>Liceo Classico</h2>
+                        </div>
+                        <div class="row">
+                            <!-- Materia 1 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Classico+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-square-root-alt"></i>
+                                </a>
+                                <h4>Matematica</h4>
+                            </div>
+                            <!-- Materia 2 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Classico+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-atom"></i>
+                                </a>
+                                <h4>Fisica</h4>
+                            </div>
+                            <!-- Materia 3 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Classico+e+vorrei+fare+ripetizioni+di+Scienze.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-flask"></i>
+                                </a>
+                                <h4>Scienze Naturali</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row gx-4 gx-lg-5">
+                    <!-- Liceo Linguistico -->
+                    <div id="liceo-linguistico-dropdown" class="faculty-exams" style="display:none;">
+                        <div class="col-12 mb-4">
+                            <h2>Liceo Linguistico</h2>
+                        </div>
+                        <div class="row">
+                            <!-- Materia 1 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Linguistico+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-square-root-alt"></i>
+                                </a>
+                                <h4>Matematica</h4>
+                            </div>
+                            <!-- Materia 2 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Linguistico+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-atom"></i>
+                                </a>
+                                <h4>Fisica</h4>
+                            </div>
+                            <!-- Materia 3 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Linguistico+e+vorrei+fare+ripetizioni+di+Scienze.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-flask"></i>
+                                </a>
+                                <h4>Scienze Naturali</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row gx-4 gx-lg-5">
+                    <!-- Liceo delle Scienze Umane -->
+                    <div id="liceo-scienze-umane-dropdown" class="faculty-exams" style="display:none;">
+                        <div class="col-12 mb-4">
+                            <h2>Liceo delle Scienze Umane</h2>
+                        </div>
+                        <div class="row">
+                            <!-- Materia 1 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+delle+Scienze+Umane+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-square-root-alt"></i>
+                                </a>
+                                <h4>Matematica</h4>
+                            </div>
+                            <!-- Materia 2 -->
+                            <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                                <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+delle+Scienze+Umane+e+vorrei+fare+ripetizioni+di+Scienze.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                    <i class="fas fa-flask"></i>
+                                </a>
+                                <h4>Scienze Naturali</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Liceo Musicale -->
+                <div id="liceo-musicale-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Liceo Musicale</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Musicale+e+vorrei+fare+ripetizioni+di+Acustica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-wave-square"></i>
+                            </a>
+                            <h4>Acustica</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Musicale+e+vorrei+fare+ripetizioni+di+Fisica+del+Suono.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-music"></i>
+                            </a>
+                            <h4>Fisica del Suono</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Liceo Coreutico -->
+                <div id="liceo-coreutico-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Liceo Coreutico</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Coreutico+e+vorrei+fare+ripetizioni+di+Anatomia+del+Movimento.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-walking"></i>
+                            </a>
+                            <h4>Anatomia del Movimento</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+il+Liceo+Coreutico+e+vorrei+fare+ripetizioni+di+Fisiologia+del+Corpo+Umano.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-dumbbell"></i>
+                            </a>
+                            <h4>Fisiologia del Corpo Umano</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istituto Tecnico Economico -->
+                <div id="istituto-tecnico-economico-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Istituto Tecnico Economico</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Tecnico+Economico+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-calculator"></i>
+                            </a>
+                            <h4>Matematica</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Tecnico+Economico+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-chart-bar"></i>
+                            </a>
+                            <h4>Statistica</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istituto Tecnico Tecnologico -->
+                <div id="istituto-tecnico-tecnologico-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Istituto Tecnico Tecnologico</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Tecnico+Tecnologico+e+vorrei+fare+ripetizioni+di+Elettronica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-microchip"></i>
+                            </a>
+                            <h4>Elettronica</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Tecnico+Tecnologico+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-bolt"></i>
+                            </a>
+                            <h4>Elettrotecnica</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istituto Professionale per i Servizi -->
+                <div id="istituto-professionale-servizi-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Istituto Professionale per i Servizi</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Professionale+per+i+Servizi+e+vorrei+fare+ripetizioni+di+Scienze+Alimentari.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-seedling"></i>
+                            </a>
+                            <h4>Scienze Alimentari</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istituto Professionale per l'Industria e l'Artigianato -->
+                <div id="istituto-professionale-industria-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Istituto Professionale per l'Industria e l'Artigianato</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Professionale+per+l'Industria+e+l'Artigianato+e+vorrei+fare+ripetizioni+di+Meccanica.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-cogs"></i>
+                            </a>
+                            <h4>Meccanica</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istituto Professionale per l'Agricoltura e lo Sviluppo Rurale -->
+                <div id="istituto-professionale-agricoltura-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Istituto Professionale per l'Agricoltura e lo Sviluppo Rurale</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Professionale+per+l'Agricoltura+e+vorrei+fare+ripetizioni+di+Biotecnologie+Agrarie.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-leaf"></i>
+                            </a>
+                            <h4>Biotecnologie Agrarie</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istituto Professionale per Enogastronomia e Ospitalità Alberghiera -->
+                <div id="istituto-professionale-enogastronomia-dropdown" class="faculty-exams" style="display:none;">
+                    <div class="col-12 mb-4">
+                        <h2>Istituto Professionale per Enogastronomia e Ospitalità Alberghiera</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-5 white-hover">
+                            <a href="https://wa.me/+393285733478?text=Ciao,+frequento+l'Istituto+Professionale+per+Enogastronomia+e+vorrei+fare+ripetizioni+di+Scienze+degli+Alimenti.+Puoi+aiutarmi+?" target="_blank" class="service-icon rounded-circle mx-auto">
+                                <i class="fas fa-utensils"></i>
+                            </a>
+                            <h4>Scienze degli Alimenti</h4>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
         <!-- Outro-->
         <div class="masthead d-flex align-items-center" id="outro">
             <div class="container px-4 px-lg-5 text-center">
