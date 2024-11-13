@@ -79,47 +79,48 @@ function fadeIn(el, display) {
     })();
 };
 
-
-function handleSelectChange_uni(select) {
+// Funzione per la selezione universitaria
+function handleUniversitySelectChange(select) {
     const selectedValue = select.value;
 
-    // Riferimento all'immagine predefinita
+    // Riferimento all'immagine predefinita per l'università
     const defaultImage = document.getElementById("default-image");
 
     if (selectedValue === "default") {
-        // Mostra l'immagine predefinita
+        // Mostra l'immagine predefinita dell'università
         defaultImage.style.display = "block";
-        // Nascondi tutte le tendine dei corsi
+        // Nascondi tutte le tendine dei corsi universitari
         hideAllDropdowns();
     } else {
-        // Nascondi l'immagine predefinita
+        // Nascondi l'immagine predefinita dell'università
         defaultImage.style.display = "none";
-        // Mostra solo il dropdown selezionato
+        // Mostra solo il dropdown selezionato per l'università
         toggleDropdown(selectedValue);
     }
-} 
+}
 
-function handleSelectChange_school(select) {
+// Funzione per la selezione della scuola superiore
+function handleHighSchoolSelectChange(select) {
     const selectedValue = select.value;
 
-    // Riferimento all'immagine predefinita
+    // Riferimento all'immagine predefinita per la scuola superiore
     const defaultImage = document.getElementById("default-image2");
 
     if (selectedValue === "default") {
-        // Mostra l'immagine predefinita
+        // Mostra l'immagine predefinita della scuola superiore
         defaultImage.style.display = "block";
-        // Nascondi tutte le tendine dei corsi
+        // Nascondi tutte le tendine dei corsi della scuola superiore
         hideAllDropdowns();
     } else {
-        // Nascondi l'immagine predefinita
+        // Nascondi l'immagine predefinita della scuola superiore
         defaultImage.style.display = "none";
-        // Mostra solo il dropdown selezionato
+        // Mostra solo il dropdown selezionato per la scuola superiore
         toggleDropdown(selectedValue);
     }
 }
 
 function hideAllDropdowns() {
-    // Nascondi tutte le tendine dei corsi
+    // Nasconde tutte le tendine dei corsi
     var dropdowns = document.getElementsByClassName('faculty-exams');
     for (var i = 0; i < dropdowns.length; i++) {
         dropdowns[i].style.display = "none";
@@ -127,7 +128,7 @@ function hideAllDropdowns() {
 }
 
 function toggleDropdown(dropdownId) {
-    // Nascondi tutte le tendine
+    // Nasconde tutte le tendine
     hideAllDropdowns();
 
     // Mostra solo la tendina selezionata
