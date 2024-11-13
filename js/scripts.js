@@ -80,7 +80,7 @@ function fadeIn(el, display) {
 };
 
 
-function handleSelectChange(select) {
+function handleSelectChange_uni(select) {
     const selectedValue = select.value;
 
     // Riferimento all'immagine predefinita
@@ -90,16 +90,16 @@ function handleSelectChange(select) {
         // Mostra l'immagine predefinita
         defaultImage.style.display = "block";
         // Nascondi tutte le tendine dei corsi
-        hideAllDropdowns();
+        hideAllDropdowns_uni();
     } else {
         // Nascondi l'immagine predefinita
         defaultImage.style.display = "none";
         // Mostra solo il dropdown selezionato
-        toggleDropdown(selectedValue);
+        toggleDropdown_uni(selectedValue);
     }
 }
 
-function hideAllDropdowns() {
+function hideAllDropdowns_uni() {
     // Nascondi tutte le tendine dei corsi
     var dropdowns = document.getElementsByClassName('faculty-exams');
     for (var i = 0; i < dropdowns.length; i++) {
@@ -107,9 +107,48 @@ function hideAllDropdowns() {
     }
 }
 
-function toggleDropdown(dropdownId) {
+function toggleDropdown_uni(dropdownId) {
     // Nascondi tutte le tendine
-    hideAllDropdowns();
+    hideAllDropdowns_uni();
+
+    // Mostra solo la tendina selezionata
+    var dropdown = document.getElementById(dropdownId);
+    if (dropdown) {
+        dropdown.style.display = "block";
+    }
+}
+
+
+function handleSelectChange_school(select) {
+    const selectedValue = select.value;
+
+    // Riferimento all'immagine predefinita
+    const defaultImage = document.getElementById("default-image");
+
+    if (selectedValue === "default") {
+        // Mostra l'immagine predefinita
+        defaultImage.style.display = "block";
+        // Nascondi tutte le tendine dei corsi
+        hideAllDropdowns_school();
+    } else {
+        // Nascondi l'immagine predefinita
+        defaultImage.style.display = "none";
+        // Mostra solo il dropdown selezionato
+        toggleDropdown_school(selectedValue);
+    }
+}
+
+function hideAllDropdowns_school() {
+    // Nascondi tutte le tendine dei corsi
+    var dropdowns = document.getElementsByClassName('faculty-exams');
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = "none";
+    }
+}
+
+function toggleDropdown_school(dropdownId) {
+    // Nascondi tutte le tendine
+    hideAllDropdowns_school();
 
     // Mostra solo la tendina selezionata
     var dropdown = document.getElementById(dropdownId);
