@@ -97,6 +97,25 @@ function handleSelectChange(select) {
         // Mostra solo il dropdown selezionato
         toggleDropdown(selectedValue);
     }
+} 
+
+function handleSelectChange(select) {
+    const selectedValue = select.value;
+
+    // Riferimento all'immagine predefinita
+    const defaultImage = document.getElementById("default-image2");
+
+    if (selectedValue === "default") {
+        // Mostra l'immagine predefinita
+        defaultImage.style.display = "block";
+        // Nascondi tutte le tendine dei corsi
+        hideAllDropdowns();
+    } else {
+        // Nascondi l'immagine predefinita
+        defaultImage.style.display = "none";
+        // Mostra solo il dropdown selezionato
+        toggleDropdown(selectedValue);
+    }
 }
 
 function hideAllDropdowns() {
