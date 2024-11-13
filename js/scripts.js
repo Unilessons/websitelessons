@@ -83,25 +83,21 @@ function fadeIn(el, display) {
 function handleSelectChange(select) {
     const selectedValue = select.value;
 
-    // Riferimento alle immagini predefinite
-    const defaultImage1 = document.getElementById("default-image");
-    const defaultImage2 = document.getElementById("default-image2");
+    // Riferimento all'immagine predefinita
+    const defaultImage = document.getElementById("default-image");
 
     if (selectedValue === "default") {
-        // Mostra entrambe le immagini predefinite
-        defaultImage1.style.display = "block";
-        defaultImage2.style.display = "block";
+        // Mostra l'immagine predefinita
+        defaultImage.style.display = "block";
         // Nascondi tutte le tendine dei corsi
         hideAllDropdowns();
     } else {
-        // Nascondi entrambe le immagini predefinite
-        defaultImage1.style.display = "none";
-        defaultImage2.style.display = "none";
+        // Nascondi l'immagine predefinita
+        defaultImage.style.display = "none";
         // Mostra solo il dropdown selezionato
         toggleDropdown(selectedValue);
     }
 }
-
 
 function hideAllDropdowns() {
     // Nascondi tutte le tendine dei corsi
