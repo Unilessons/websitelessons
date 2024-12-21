@@ -122,15 +122,4 @@ function toggleDropdown(dropdownId) {
 
 
 
-// Mostra il pulsante quando si scrolla
-window.onscroll = function() {
-    var scrollToNavbar = document.querySelector('.scroll-to-navbar');
-    
-    // Mostra il pulsante solo se si è scrollato più di 200px
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        scrollToNavbar.style.display = "block";
-    } else {
-        scrollToNavbar.style.display = "none";
-    }
-};
 
