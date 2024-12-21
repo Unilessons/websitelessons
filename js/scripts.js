@@ -116,7 +116,7 @@ function toggleDropdown(dropdownId) {
     // Mostra solo la tendina selezionata
     var dropdown = document.getElementById(dropdownId);
     if (dropdown) {
-        dropdown.style.display = "block";
+        dropdown.style.display = "block"; 
     }
 }
 
