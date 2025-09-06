@@ -11248,7 +11248,7 @@ footer.footer .social-link:hover {
 
 
 p {
-  padding-top: 70px; /* Aumenta o diminuisci il valore come necessario */
+  padding-top: 15px; /* Aumenta o diminuisci il valore come necessario */
 }
 
 small {
@@ -11267,4 +11267,8 @@ small {
 .svg-blue-icon {
   color: #007bff; /* Colore blu */
   vertical-align: middle; /* Allinea verticalmente l'icona al centro del testo */
+}
+.position-left-fixed {
+  position: fixed;
+  left: 30%;
 }
