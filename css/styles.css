@@ -11248,12 +11248,27 @@ footer.footer .social-link:hover {
 
 
 p {
-  padding-top: 70px; /* Aumenta o diminuisci il valore come necessario */
+  padding-top: 15px; /* Aumenta o diminuisci il valore come necessario */
 }
 
 small {
   padding-top: 40px; /* Aumenta o diminuisci il valore come necessario */
 }
 
-
-
+.font-size20 {
+  font-size: 20px; /* Aumenta o diminuisci il valore come necessario */
+}
+.font-size18 {
+  font-size: 18px; /* Aumenta o diminuisci il valore come necessario */
+} 
+.font-size16 {
+  font-size: 16px; /* Aumenta o diminuisci il valore come necessario */
+}
+.svg-blue-icon {
+  color: #007bff; /* Colore blu */
+  vertical-align: middle; /* Allinea verticalmente l'icona al centro del testo */
+}
+.position-left-fixed {
+  position: fixed;
+  left: 30%;
+}
