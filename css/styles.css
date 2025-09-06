@@ -11255,5 +11255,16 @@ small {
   padding-top: 40px; /* Aumenta o diminuisci il valore come necessario */
 }
 
-
-
+.font-size20 {
+  font-size: 20px; /* Aumenta o diminuisci il valore come necessario */
+}
+.font-size18 {
+  font-size: 18px; /* Aumenta o diminuisci il valore come necessario */
+} 
+.font-size16 {
+  font-size: 16px; /* Aumenta o diminuisci il valore come necessario */
+}
+.svg-blue-icon {
+  color: #007bff; /* Colore blu */
+  vertical-align: middle; /* Allinea verticalmente l'icona al centro del testo */
+}
