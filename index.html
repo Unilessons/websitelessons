@@ -356,6 +356,22 @@ body::before{
 }
 .proof-img-content p{max-width:520px;color:var(--ink-soft);font-size:16.5px;margin:0 0 22px}
 
+@media (max-width:768px){
+  .proof-img-wrap{
+    aspect-ratio:unset;
+    height:auto;
+  }
+  .proof-img-content{
+    position:relative;
+    inset:unset;
+    padding:48px 20px;
+  }
+  .proof-img{
+    position:absolute;
+    inset:0;
+  }
+}
+
 /* marquee */
 .marquee-wrap{
   margin-top:60px;max-width:1180px;margin-inline:auto;
