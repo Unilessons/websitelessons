@@ -107,6 +107,12 @@
       if (b.title.toLowerCase().includes(q)) return true;
       if (b.exams.some(e => e.name.toLowerCase().includes(q))) return true;
       return false;
+    }).sort((a, b) => {
+      const pa = AREA_PRIORITY.indexOf(a.area) !== -1 ? AREA_PRIORITY.indexOf(a.area) : 999;
+      const pb = AREA_PRIORITY.indexOf(b.area) !== -1 ? AREA_PRIORITY.indexOf(b.area) : 999;
+      if (pa !== pb) return pa - pb;
+      if (a.area !== b.area) return a.area.localeCompare(b.area);
+      return a.title.localeCompare(b.title);
     });
     grid.innerHTML = filtered.map(b => {
       const matchedExam = q ? b.exams.find(e => e.name.toLowerCase().includes(q)) : null;

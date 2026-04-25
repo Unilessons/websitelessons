@@ -133,16 +133,12 @@ body::before{
 .nav-inner{
   position:absolute;left:0;right:0;top:0;bottom:0;
   background:var(--bg);
-  backdrop-filter:blur(12px) saturate(150%);
-  -webkit-backdrop-filter:blur(12px) saturate(150%);
   border-bottom:1px solid var(--line-soft);
-  transition:background .35s ease, backdrop-filter .35s ease, border-color .35s ease;
+  transition:background .35s ease, border-color .35s ease;
   pointer-events:none;
 }
 .nav.scrolled .nav-inner{
   background:var(--bg);
-  backdrop-filter:blur(14px) saturate(160%);
-  -webkit-backdrop-filter:blur(14px) saturate(160%);
   border-bottom:1px solid var(--line);
 }
 .nav > *{position:relative;z-index:1}
@@ -227,6 +223,19 @@ body::before{
   .nav-links{display:none}
   .nav-burger{display:flex}
   .brand{font-size:22px}
+}
+@media (max-width:520px){
+  .nav, .nav.scrolled{padding:10px 14px}
+  .brand{font-size:19px;gap:8px}
+  .brand-mark{width:28px;height:28px;font-size:11px}
+  .nav-right{gap:6px}
+  #navWa{padding:9px 14px;font-size:13px}
+  #navWa span, #navWa{gap:6px}
+  .theme-toggle{width:34px;height:34px}
+  .nav-burger{width:36px;height:36px}
+}
+@media (max-width:380px){
+  #navWa{display:none}
 }
 
 /* ============== HERO ============== */
@@ -833,24 +842,6 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
 
     <div class="area-filters" id="areaFilters"></div>
     <div class="faculties" id="facultiesGrid">
-        <button class="faculty" data-id="facolta-giurisprudenza-dropdown">
-          <div class="area">Umanistiche</div>
-          <h3>Giurisprudenza</h3>
-          <div class="meta">
-            <span>4 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-lettere-dropdown">
-          <div class="area">Umanistiche</div>
-          <h3>Lettere</h3>
-          <div class="meta">
-            <span>6 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
         <button class="faculty" data-id="facolta-chimica-dropdown">
           <div class="area">Scienze</div>
           <h3>Chimica</h3>
@@ -859,43 +850,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-economia-aziendale-dropdown">
-          <div class="area">Economia</div>
-          <h3>Economia Aziendale</h3>
-          <div class="meta">
-            <span>2 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-economia-e-commercio-dropdown">
-          <div class="area">Economia</div>
-          <h3>Economia e Commercio</h3>
-          <div class="meta">
-            <span>3 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-economia-e-management-dropdown">
-          <div class="area">Economia</div>
-          <h3>Economia e Management</h3>
-          <div class="meta">
-            <span>4 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-farmaceutica-e-nutraceutica-animale-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Farmaceutica e Nutraceutica Animale</h3>
-          <div class="meta">
-            <span>2 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
+
         <button class="faculty" data-id="facolta-fisica-dropdown">
           <div class="area">Scienze</div>
           <h3>Fisica</h3>
@@ -904,7 +859,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
+
         <button class="faculty" data-id="facolta-gestione-e-valorizzazione-risorse-agrarie-dropdown">
           <div class="area">Scienze</div>
           <h3>Gestione e Valorizzazione delle Risorse Agrarie e delle Aree Protette</h3>
@@ -913,97 +868,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-infermieristica-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Infermieristica</h3>
-          <div class="meta">
-            <span>1 esame</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-informatica-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Informatica</h3>
-          <div class="meta">
-            <span>6 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-chimica-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Chimica</h3>
-          <div class="meta">
-            <span>5 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-civile-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Civile</h3>
-          <div class="meta">
-            <span>6 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-civile-ambiente-territorio-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Civile per l'Ambiente ed il Territorio</h3>
-          <div class="meta">
-            <span>3 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-informazione-medicina-digitale-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria dell'Informazione per la Medicina Digitale</h3>
-          <div class="meta">
-            <span>7 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-elettronica-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Elettronica</h3>
-          <div class="meta">
-            <span>7 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-gestionale-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Gestionale</h3>
-          <div class="meta">
-            <span>7 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-informatica-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Informatica</h3>
-          <div class="meta">
-            <span>14 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-ingegneria-meccanica-dropdown">
-          <div class="area">Ingegneria</div>
-          <h3>Ingegneria Meccanica</h3>
-          <div class="meta">
-            <span>7 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
+
         <button class="faculty" data-id="facolta-matematica-dropdown">
           <div class="area">Scienze</div>
           <h3>Matematica</h3>
@@ -1012,16 +877,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-ostetricia-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Ostetricia</h3>
-          <div class="meta">
-            <span>1 esame</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
+
         <button class="faculty" data-id="facolta-scienze-ambientali-dropdown">
           <div class="area">Scienze</div>
           <h3>Scienze Ambientali</h3>
@@ -1030,7 +886,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
+
         <button class="faculty" data-id="facolta-scienze-biologiche-dropdown">
           <div class="area">Scienze</div>
           <h3>Scienze Biologiche</h3>
@@ -1039,34 +895,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-scienze-turismo-dropdown">
-          <div class="area">Economia</div>
-          <h3>Scienze del Turismo</h3>
-          <div class="meta">
-            <span>3 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-scienze-amministrazione-dropdown">
-          <div class="area">Economia</div>
-          <h3>Scienze dell'Amministrazione e dell'Organizzazione</h3>
-          <div class="meta">
-            <span>1 esame</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-scienze-attivita-motorie-dropdown">
-          <div class="area">Umanistiche</div>
-          <h3>Scienze delle Attività Motorie, Sportive e dell'Educazione Psicomotoria</h3>
-          <div class="meta">
-            <span>1 esame</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
+
         <button class="faculty" data-id="facolta-nanotecnologie-sostenibilita-dropdown">
           <div class="area">Scienze</div>
           <h3>Scienze e Nanotecnologie per la Sostenibilità</h3>
@@ -1075,25 +904,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-scienze-politiche-dropdown">
-          <div class="area">Umanistiche</div>
-          <h3>Scienze Politiche e delle Relazioni Internazionali</h3>
-          <div class="meta">
-            <span>1 esame</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-sociologia-dropdown">
-          <div class="area">Umanistiche</div>
-          <h3>Sociologia</h3>
-          <div class="meta">
-            <span>2 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
+
         <button class="faculty" data-id="facolta-statistica-bigdata-dropdown">
           <div class="area">Scienze</div>
           <h3>Statistica per i Big Data</h3>
@@ -1102,61 +913,52 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-studi-diplomatici-dropdown">
-          <div class="area">Umanistiche</div>
-          <h3>Studi Diplomatici, Internazionali e sulla Sicurezza Globale</h3>
+
+        <button class="faculty" data-id="facolta-informatica-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Informatica</h3>
           <div class="meta">
             <span>6 esami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-tecniche-radiologia-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Tecniche di Radiologia Medica, per Immagini e Radioterapia</h3>
-          <div class="meta">
-            <span>2 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-tecniche-erboristiche-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Tecniche Erboristiche</h3>
-          <div class="meta">
-            <span>2 esami</span>
-            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </button>
-      
-        <button class="faculty" data-id="facolta-tecniche-edilizia-dropdown">
+
+        <button class="faculty" data-id="facolta-ingegneria-chimica-dropdown">
           <div class="area">Ingegneria</div>
-          <h3>Tecniche per l'Edilizia e il Territorio</h3>
+          <h3>Ingegneria Chimica</h3>
           <div class="meta">
-            <span>1 esame</span>
+            <span>5 esami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-chimica-tecnologia-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Chimica e Tecnologia Farmaceutiche</h3>
+
+        <button class="faculty" data-id="facolta-ingegneria-civile-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria Civile</h3>
           <div class="meta">
-            <span>2 esami</span>
+            <span>6 esami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-farmacia-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Farmacia</h3>
+
+        <button class="faculty" data-id="facolta-ingegneria-civile-ambiente-territorio-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria Civile per l'Ambiente ed il Territorio</h3>
           <div class="meta">
             <span>3 esami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
+
+        <button class="faculty" data-id="facolta-ingegneria-informazione-medicina-digitale-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria dell'Informazione per la Medicina Digitale</h3>
+          <div class="meta">
+            <span>7 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
         <button class="faculty" data-id="facolta-ingegneria-edile-dropdown">
           <div class="area">Ingegneria</div>
           <h3>Ingegneria Edile-Architettura</h3>
@@ -1165,7 +967,187 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
+
+        <button class="faculty" data-id="facolta-ingegneria-elettronica-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria Elettronica</h3>
+          <div class="meta">
+            <span>7 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-ingegneria-gestionale-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria Gestionale</h3>
+          <div class="meta">
+            <span>7 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-ingegneria-informatica-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria Informatica</h3>
+          <div class="meta">
+            <span>14 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-ingegneria-meccanica-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Ingegneria Meccanica</h3>
+          <div class="meta">
+            <span>7 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-tecniche-edilizia-dropdown">
+          <div class="area">Ingegneria</div>
+          <h3>Tecniche per l'Edilizia e il Territorio</h3>
+          <div class="meta">
+            <span>1 esame</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-chimica-tecnologia-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Chimica e Tecnologia Farmaceutiche</h3>
+          <div class="meta">
+            <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-farmacia-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Farmacia</h3>
+          <div class="meta">
+            <span>3 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-farmaceutica-e-nutraceutica-animale-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Farmaceutica e Nutraceutica Animale</h3>
+          <div class="meta">
+            <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-infermieristica-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Infermieristica</h3>
+          <div class="meta">
+            <span>1 esame</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-medicina-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Medicina e Chirurgia</h3>
+          <div class="meta">
+            <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-ostetricia-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Ostetricia</h3>
+          <div class="meta">
+            <span>1 esame</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-tecniche-radiologia-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Tecniche di Radiologia Medica, per Immagini e Radioterapia</h3>
+          <div class="meta">
+            <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-tecniche-erboristiche-dropdown">
+          <div class="area">Sanitarie</div>
+          <h3>Tecniche Erboristiche</h3>
+          <div class="meta">
+            <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-economia-aziendale-dropdown">
+          <div class="area">Economia</div>
+          <h3>Economia Aziendale</h3>
+          <div class="meta">
+            <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-economia-e-commercio-dropdown">
+          <div class="area">Economia</div>
+          <h3>Economia e Commercio</h3>
+          <div class="meta">
+            <span>3 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-economia-e-management-dropdown">
+          <div class="area">Economia</div>
+          <h3>Economia e Management</h3>
+          <div class="meta">
+            <span>4 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-scienze-turismo-dropdown">
+          <div class="area">Economia</div>
+          <h3>Scienze del Turismo</h3>
+          <div class="meta">
+            <span>3 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-scienze-amministrazione-dropdown">
+          <div class="area">Economia</div>
+          <h3>Scienze dell'Amministrazione e dell'Organizzazione</h3>
+          <div class="meta">
+            <span>1 esame</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-giurisprudenza-dropdown">
+          <div class="area">Umanistiche</div>
+          <h3>Giurisprudenza</h3>
+          <div class="meta">
+            <span>4 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-lettere-dropdown">
+          <div class="area">Umanistiche</div>
+          <h3>Lettere</h3>
+          <div class="meta">
+            <span>6 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
         <button class="faculty" data-id="facolta-scienze-formazione-dropdown">
           <div class="area">Umanistiche</div>
           <h3>Scienze della Formazione Primaria</h3>
@@ -1174,12 +1156,39 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
-      
-        <button class="faculty" data-id="facolta-medicina-dropdown">
-          <div class="area">Sanitarie</div>
-          <h3>Medicina e Chirurgia</h3>
+
+        <button class="faculty" data-id="facolta-scienze-attivita-motorie-dropdown">
+          <div class="area">Umanistiche</div>
+          <h3>Scienze delle Attività Motorie, Sportive e dell'Educazione Psicomotoria</h3>
+          <div class="meta">
+            <span>1 esame</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-scienze-politiche-dropdown">
+          <div class="area">Umanistiche</div>
+          <h3>Scienze Politiche e delle Relazioni Internazionali</h3>
+          <div class="meta">
+            <span>1 esame</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-sociologia-dropdown">
+          <div class="area">Umanistiche</div>
+          <h3>Sociologia</h3>
           <div class="meta">
             <span>2 esami</span>
+            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </button>
+
+        <button class="faculty" data-id="facolta-studi-diplomatici-dropdown">
+          <div class="area">Umanistiche</div>
+          <h3>Studi Diplomatici, Internazionali e sulla Sicurezza Globale</h3>
+          <div class="meta">
+            <span>6 esami</span>
             <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </button>
