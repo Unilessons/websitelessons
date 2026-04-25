@@ -6,7 +6,12 @@
   const isUni = (b) => b.id.startsWith('facolta-');
   const uni = data.filter(isUni);
   const hs = data.filter(b => !isUni(b));
-  const allAreas = Array.from(new Set(uni.map(b => b.area))).sort();
+  const AREA_PRIORITY = ['Scienze', 'Ingegneria'];
+  const allAreas = Array.from(new Set(uni.map(b => b.area))).sort((a, b) => {
+    const pa = AREA_PRIORITY.indexOf(a) !== -1 ? AREA_PRIORITY.indexOf(a) : 999;
+    const pb = AREA_PRIORITY.indexOf(b) !== -1 ? AREA_PRIORITY.indexOf(b) : 999;
+    return pa !== pb ? pa - pb : a.localeCompare(b);
+  });
   const hsAreas = Array.from(new Set(hs.map(b => b.area))).sort();
 
   let activeTab = 'uni';
