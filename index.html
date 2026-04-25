@@ -132,7 +132,7 @@ body::before{
 }
 .nav-inner{
   position:absolute;left:0;right:0;top:0;bottom:0;
-  background:color-mix(in oklab, var(--bg) 62%, transparent);
+  background:var(--bg);
   backdrop-filter:blur(12px) saturate(150%);
   -webkit-backdrop-filter:blur(12px) saturate(150%);
   border-bottom:1px solid var(--line-soft);
@@ -140,7 +140,7 @@ body::before{
   pointer-events:none;
 }
 .nav.scrolled .nav-inner{
-  background:color-mix(in oklab, var(--bg) 82%, transparent);
+  background:var(--bg);
   backdrop-filter:blur(14px) saturate(160%);
   -webkit-backdrop-filter:blur(14px) saturate(160%);
   border-bottom:1px solid var(--line);
@@ -831,7 +831,7 @@ footer{background:var(--bg-3);color:var(--ink);padding:60px 24px 28px;border-top
       </label>
     </div>
 
-    <div class="area-filters" id="areaFilters"><button class="area-chip" aria-pressed="true" data-area="Tutte">Tutte</button><button class="area-chip" aria-pressed="false" data-area="Economia">Economia</button><button class="area-chip" aria-pressed="false" data-area="Ingegneria">Ingegneria</button><button class="area-chip" aria-pressed="false" data-area="Sanitarie">Sanitarie</button><button class="area-chip" aria-pressed="false" data-area="Scienze">Scienze</button><button class="area-chip" aria-pressed="false" data-area="Umanistiche">Umanistiche</button></div>
+    <div class="area-filters" id="areaFilters"><button class="area-chip" aria-pressed="true" data-area="Tutte">Tutte</button><button class="area-chip" aria-pressed="false" data-area="Scienze">Scienze</button><button class="area-chip" aria-pressed="false" data-area="Ingegneria">Ingegneria</button><button class="area-chip" aria-pressed="false" data-area="Economia">Economia</button><button class="area-chip" aria-pressed="false" data-area="Sanitarie">Sanitarie</button><button class="area-chip" aria-pressed="false" data-area="Umanistiche">Umanistiche</button></div>
     <div class="faculties" id="facultiesGrid">
         <button class="faculty" data-id="facolta-giurisprudenza-dropdown">
           <div class="area">Umanistiche</div>
